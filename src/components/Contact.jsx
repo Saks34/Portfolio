@@ -31,8 +31,8 @@ const handleChange = (e) =>{
   
     emailjs
       .send(
-        'service_hsrgwnm', // service ID
-        'template_c14yh8h', // template ID
+        'service_hsrgwnm',
+        'template_c14yh8h', 
         {
           from_name: form.name,
           to_name: 'Saksham Satnalika',
@@ -40,7 +40,7 @@ const handleChange = (e) =>{
           to_email: 'sakshamsatnalika723@gmail.com',
           message: form.message,
         },
-        'AYeMdixZPVL40bPYb' // public API key
+        'AYeMdixZPVL40bPYb' //
       )
       .then(
         () => {
