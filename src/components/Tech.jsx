@@ -1,4 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
+<<<<<<< HEAD
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
@@ -49,3 +50,22 @@ const Tech = () => {
 };
 
 export default SectionWrapper(Tech, "tech");
+=======
+import { BallCanvas } from "./canvas"
+import { SectionWrapper } from "../hoc"
+import { technologies } from "../constants"
+
+const Tech = () => {
+  return (
+    <div className="flex flex-row flex-wrap justify-center gap-10">
+      {technologies.map((technology)=>(
+        <div className="w-28 h-28" key={technology.name}>
+          <BallCanvas icon={technology.icon}/>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export default SectionWrapper(Tech,"");
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb

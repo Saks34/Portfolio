@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
+<<<<<<< HEAD
 import React, { Suspense, useEffect, useState } from "react";
+=======
+import React, { Suspense } from "react";
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -13,8 +17,13 @@ import {
 
 import CanvasLoader from "../Loader";
 
+<<<<<<< HEAD
 const Ball = ({ imgUrl, ballColor }) => {
   const [decal] = useTexture([imgUrl]);
+=======
+const Ball = (props) => {
+  const [decal] = useTexture([props.imgUrl]);
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -23,7 +32,11 @@ const Ball = ({ imgUrl, ballColor }) => {
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
+<<<<<<< HEAD
           color={ballColor}
+=======
+          color='#fff8eb'
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -41,6 +54,7 @@ const Ball = ({ imgUrl, ballColor }) => {
 };
 
 const BallCanvas = ({ icon }) => {
+<<<<<<< HEAD
   const [ballColor, setBallColor] = useState("#fff8eb"); // default for light mode
 
   useEffect(() => {
@@ -60,9 +74,26 @@ const BallCanvas = ({ icon }) => {
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} ballColor={ballColor} />
       </Suspense>
+=======
+  return (
+    <Canvas
+      frameloop='demand'
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls enableZoom={false} />
+        <Ball imgUrl={icon} />
+      </Suspense>
+
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
       <Preload all />
     </Canvas>
   );
 };
 
+<<<<<<< HEAD
 export default BallCanvas;
+=======
+export default BallCanvas;
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb

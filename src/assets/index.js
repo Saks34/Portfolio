@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+<<<<<<< HEAD
 import menu_dark from "./menu_dark.svg";
 import close_dark from "./close_dark.svg";
 import res from "./res.png";
@@ -14,6 +15,8 @@ import specializedres from "./specialized_res.png";
 import specializedresume from "./specialized_resume.pdf";
 import College from './College.png';
 import Primary from './Primary.png';
+=======
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
 
 import css from "./tech/css.png";
 import java from "./tech/java.png";
@@ -24,18 +27,26 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+<<<<<<< HEAD
 import python from "./tech/python.png";
+=======
+import python from "./tech/python.jpeg";
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+<<<<<<< HEAD
 import etp from "./etp.png";
 import tictactoe from "./tictactoe.png";
 
@@ -59,6 +70,10 @@ import seventeen from "./Certificates/17.pdf";
 import eighteen from "./Certificates/18.pdf";
 import nineteen from "./Certificates/19.pdf";
 
+=======
+import jobit from "./jobit.png";
+import tripguide from "./tripguide.png";
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
 
 export {
   logo,
@@ -69,8 +84,11 @@ export {
   github,
   menu,
   close,
+<<<<<<< HEAD
   menu_dark,
   close_dark,
+=======
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
   css,
   java,
   cpp,
@@ -89,6 +107,7 @@ export {
   starbucks,
   tesla,
   carrent,
+<<<<<<< HEAD
   etp,
   tictactoe,
   College,
@@ -116,4 +135,8 @@ export {
   nineteen,
   specializedres,
   specializedresume
+=======
+  jobit,
+  tripguide,
+>>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb
 };
