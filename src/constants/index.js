@@ -188,6 +188,7 @@ import {
   const services = [
     {
       title: "Web Developer",
+      icon: web,
     },
     {
       title: "React Developer",
@@ -223,8 +224,8 @@ import {
     { name: "Git", icon: git},
     { name: "Python", icon: python},
     { name: "Java", icon: java},
-    { name: "C++", icon: cpp},
     { name: "Three JS", icon: threejs},
+    { name: "C++", icon: cpp},
     { name: "React Native", icon: native},
   ];
   

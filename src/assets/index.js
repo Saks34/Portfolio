@@ -25,7 +25,7 @@ import logo from "./logo.svg";
     import python from "./tech/python.png";
     import tailwind from "./tech/tailwind.png";
     import typescript from "./tech/typescript.png";
-    import threejs from "./tech/threejs.svg";
+    import threejs from "./tech/threejs.png";
     import native from "./tech/native.png";
     
     import meta from "./company/meta.png";

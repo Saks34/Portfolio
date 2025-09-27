@@ -41,18 +41,47 @@ const Ball = ({ imgUrl, ballColor }) => {
     };
     
     const BallCanvas = ({ icon }) => {
-  const [ballColor, setBallColor] = useState("#fff8eb"); // default for light mode
+  const [ballColor, setBallColor] = useState("#374151"); // default darker for light mode (better decal contrast)
 
   useEffect(() => {
     const observer = () => {
       const isDark = document.documentElement.classList.contains("dark");
-      setBallColor(isDark ? "#fff8eb" : "#d1d5db"); // match your dark/light backgrounds
+      // Dark mode: light ball for dark background; Light mode: darker ball for white logos contrast
+      setBallColor(isDark ? "#fff8eb" : "#374151");
     };
 
     observer(); // initial check
     const observerInterval = setInterval(observer, 100); // watch for theme changes
     return () => clearInterval(observerInterval);
   }, []);
+
+  const isSvg = typeof icon === "string" && icon.endsWith(".svg");
+
+  if (isSvg) {
+    // Fallback rendering for SVG icons: simple circular image
+    return (
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-24 h-24 rounded-full bg-gray-900/90 dark:bg-gray-800/90 shadow flex items-center justify-center overflow-hidden">
+          {/* SVG mask filled with solid white for crisp brand look */}
+          <div
+            aria-label="tech"
+            className="w-16 h-16"
+            style={{
+              WebkitMaskImage: `url(${icon})`,
+              maskImage: `url(${icon})`,
+              WebkitMaskRepeat: 'no-repeat',
+              maskRepeat: 'no-repeat',
+              WebkitMaskPosition: 'center',
+              maskPosition: 'center',
+              WebkitMaskSize: 'contain',
+              maskSize: 'contain',
+              background: '#ffffff',
+            }}
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <Canvas frameloop='demand' dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
