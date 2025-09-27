@@ -11,7 +11,7 @@ import { styles } from "../styles";
 import { education } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 
 const EducationCard = ({ edu }) => (
@@ -61,7 +61,7 @@ const EducationCard = ({ edu }) => (
 const Education = () => (
   <>
   <Helmet>
-    <title>About | Saksham Satnalika</title>
+    <title>Saksham Satnalika</title>
     <meta name="description" content="Learn about Saksham Satnalika – a B.Tech CSE student at LPU, skilled in React and backend dev, and a content creator on YouTube." />
     <meta name="keywords" content="Saksham Satnalika, About Saksham, LPU Student, React Developer, Backend Developer, Content Creator" />
   </Helmet>

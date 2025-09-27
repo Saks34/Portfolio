@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const Works = () => {
-  return (
-    <div>Works</div>
-  )
-}
-
-export default Works
-=======
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
@@ -112,4 +101,3 @@ const Works = () => {
 };
 
 export default SectionWrapper(Works, "work");
->>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb

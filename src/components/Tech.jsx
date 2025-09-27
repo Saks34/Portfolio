@@ -1,22 +1,21 @@
 /* eslint-disable react-refresh/only-export-components */
-<<<<<<< HEAD
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 
 const Tech = () => {
   return (
     <>
-  <Helmet>
-    <title>About | Saksham Satnalika</title>
-    <meta name="description" content="Learn about Saksham Satnalika – a B.Tech CSE student at LPU, skilled in React and backend dev, and a content creator on YouTube." />
-    <meta name="keywords" content="Saksham Satnalika, About Saksham, LPU Student, React Developer, Backend Developer, Content Creator" />
-  </Helmet>
+      <Helmet>
+        <title>Saksham Satnalika</title>
+        <meta name="description" content="Learn about Saksham Satnalika – a B.Tech CSE student at LPU, skilled in React and backend dev, and a content creator on YouTube." />
+        <meta name="keywords" content="Saksham Satnalika, About Saksham, LPU Student, React Developer, Backend Developer, Content Creator" />
+      </Helmet>
 
       {/* Heading section */}
       <motion.div variants={textVariant()}>
@@ -50,22 +49,3 @@ const Tech = () => {
 };
 
 export default SectionWrapper(Tech, "tech");
-=======
-import { BallCanvas } from "./canvas"
-import { SectionWrapper } from "../hoc"
-import { technologies } from "../constants"
-
-const Tech = () => {
-  return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology)=>(
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon}/>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-export default SectionWrapper(Tech,"");
->>>>>>> 94a0f592ce77fdedab7ed3a443a81312aabd4ecb

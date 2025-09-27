@@ -8,7 +8,7 @@
   import CanvasLoader from "../Loader";
 
   const Computers = ({ isMobile }) => {
-    const computer = useGLTF("./desktop_pc/scene.gltf");
+    const computer = useGLTF("/desktop_pc/scene.gltf");
 
     return (
       <mesh>
@@ -31,7 +31,6 @@
       </mesh>
     );
   };
-
   const ComputersCanvas = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -58,11 +57,17 @@
 
     return (
       <Canvas
+        className="w-full h-full"
+        style={{ background: "transparent" }}
         frameloop='demand'
         shadows
         dpr={[1, 2]}
         camera={{ position: [20, 3, 5], fov: 25 }}
-        gl={{ preserveDrawingBuffer: true }}
+        gl={{ preserveDrawingBuffer: true, alpha: true }}
+        onCreated={({ gl }) => {
+          // Ensure the canvas is transparent and does not cover background
+          gl.setClearColor(0x000000, 0);
+        }}
       >
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls
