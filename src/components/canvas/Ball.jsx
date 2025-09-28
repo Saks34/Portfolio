@@ -84,7 +84,7 @@ const Ball = ({ imgUrl, ballColor }) => {
   }
 
   return (
-    <Canvas frameloop='demand' dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
+    <Canvas frameloop='always' dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} ballColor={ballColor} />

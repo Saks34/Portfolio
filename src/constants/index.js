@@ -191,7 +191,7 @@ import {
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "React Native Developer",
       icon: reactjs,
     },
     {

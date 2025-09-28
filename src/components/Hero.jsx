@@ -65,12 +65,14 @@ class CanvasErrorBoundary extends React.Component {
           </div>
         </div>
         
-        <div className="absolute inset-0 z-[1] pointer-events-none w-full h-full">
-          <CanvasErrorBoundary>
-            <Suspense fallback={null}>
-              <LazyComputersCanvas />
-            </Suspense>
-          </CanvasErrorBoundary>
+        <div className="absolute top-[60px] bottom-[60px] inset-x-0 z-[5] pointer-events-auto flex items-center justify-center">
+          <div className="w-full max-w-[1600px] h-full">
+            <CanvasErrorBoundary>
+              <Suspense fallback={null}>
+                <LazyComputersCanvas />
+              </Suspense>
+            </CanvasErrorBoundary>
+          </div>
         </div>
 
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
