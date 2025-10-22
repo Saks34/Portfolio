@@ -27,13 +27,13 @@ class CanvasErrorBoundary extends React.Component {
   }
 }
 
-  const Hero = () => {
-    return (
-      <>
-    <Helmet>
-      <title>Saksham Satnalika</title>
-      <meta name="keywords" content="Saksham Satnalika, About Saksham, LPU Student, React Developer, Backend Developer, Content Creator" />
-    </Helmet>
+const Hero = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Saksham Satnalika</title>
+        <meta name="keywords" content="Saksham Satnalika, About Saksham, LPU Student, React Developer, Backend Developer, Content Creator" />
+      </Helmet>
 
       <section className="relative w-full h-screen mx-auto bg-cover bg-center overflow-hidden">
         {/* Background images for light/dark modes */}
@@ -48,7 +48,7 @@ class CanvasErrorBoundary extends React.Component {
           aria-hidden="true"
         />
         <div
-          className={`absolute inset-0 top-[120px] z-10 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+          className={`absolute inset-0 top-[120px] z-10 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 pointer-events-none`}
         >
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -65,7 +65,7 @@ class CanvasErrorBoundary extends React.Component {
           </div>
         </div>
         
-        <div className="absolute top-[60px] bottom-[60px] inset-x-0 z-[5] pointer-events-auto flex items-center justify-center">
+        <div className="absolute top-[60px] bottom-[60px] inset-x-0 z-[5] flex items-center justify-center">
           <div className="w-full max-w-[1600px] h-full">
             <CanvasErrorBoundary>
               <Suspense fallback={null}>
@@ -75,8 +75,8 @@ class CanvasErrorBoundary extends React.Component {
           </div>
         </div>
 
-        <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
-          <a href="#about">
+        <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10 pointer-events-none">
+          <a href="#about" className="pointer-events-auto">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-gray-900 dark:border-white flex justify-center items-start p-2">
               <motion.div
                 animate={{ y: [0, 24, 0] }}
@@ -91,8 +91,8 @@ class CanvasErrorBoundary extends React.Component {
           </a>
         </div>
       </section>
-      </>
-    )
-  };
+    </>
+  );
+};
 
 export default Hero;
