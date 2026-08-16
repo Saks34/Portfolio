@@ -149,7 +149,7 @@ const Contact = () => {
             className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
           >
             <div
-              className="h-full w-full rounded-2xl overflow-hidden shadow-md bg-gradient-to-br from-[#e5e7eb] to-[#f3f4f6] dark:bg-transparent"
+              className="h-full w-full rounded-2xl overflow-hidden shadow-md bg-gradient-to-br from-[#e5e7eb] to-[#f3f4f6] dark:bg-none dark:bg-transparent"
             >
               <EarthCanvas />
             </div>

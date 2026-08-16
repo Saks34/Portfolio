@@ -3,14 +3,12 @@ import { BrowserRouter, useLocation } from "react-router-dom";
 import {
   About,
   Contact,
-  Certificates,
   Education,
   Hero,
   Navbar,
   Tech,
   Project,
   StarsCanvas,
-  Resume,
 } from './components';
 import ReactGA from "react-ga4";
 
@@ -40,8 +38,6 @@ const App = () => {
         <Tech />
         <Project />
         <Education />
-        <Resume />
-        <Certificates />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

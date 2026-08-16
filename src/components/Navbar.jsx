@@ -175,19 +175,19 @@ const Navbar = () => {
 
                 {/* Social Icons - Mobile */}
                 <div className="flex gap-4 mt-4 justify-center">
-                  <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer">
+                  <a href="https://youtube.com/@sakshusat" target="_blank" rel="noopener noreferrer">
                     <FaYoutube className="text-lg text-red-600 hover:text-red-700" />
                   </a>
-                  <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+                  <a href="https://instagram.com/sakshusat" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-lg text-pink-500 hover:text-pink-600" />
                   </a>
-                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Saks34" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="text-lg text-gray-800 dark:text-white hover:text-gray-600" />
                   </a>
-                  <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/sakshamsatnalika" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="text-lg text-blue-600 hover:text-blue-700" />
                   </a>
-                  <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer">
+                  <a href="https://x.com/sakshusat" target="_blank" rel="noopener noreferrer">
                     <FaXTwitter className="text-lg text-black dark:text-white hover:text-gray-700" />
                   </a>
                 </div>

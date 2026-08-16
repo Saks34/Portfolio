@@ -4,11 +4,8 @@ import Navbar from './Navbar';
 import About from './About';
 import Tech from './Tech';
 import Project from './Project';
-import Certificates from './Certificates';
-import Feedbacks from './Feedbacks';
-import Contact from './Contact';
-import Resume from './Resume';
 import Education from './Education';
+import Contact from './Contact';
 
 export {
   Hero,
@@ -16,10 +13,7 @@ export {
   About,
   Tech,
   Project,
-  Certificates,
   Education,
-  Feedbacks,
-  Resume,
   Contact,
   EarthCanvas,
   BallCanvas,

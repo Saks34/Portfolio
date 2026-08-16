@@ -1,5 +1,4 @@
 import {
-  mobile,
   backend,
   creator,
   web,
@@ -13,36 +12,13 @@ import {
   nodejs,
   mongodb,
   git,
-  cpp,
-  java,
   native,
   carrent,
   etp,
- merakhata,
+  merakhata,
   threejs,
   College,
   Primary,
-  resume,
-  one,
-  two,
-  three,
-  four,
-  five,
-  six,
-  seven,
-  eight,
-  nine,
-  ten,
-  eleven,
-  twelve,
-  thirteen,
-  fourteen,
-  fifteen,
-  sixteen,
-  seventeen,
-  eighteen,
-  nineteen,
-  specializedresume,
 } from "../assets";
   
   const navLinks = [
@@ -63,126 +39,10 @@ import {
       title: "Education",
     },
     {
-      id: "resume",
-      title: "Resume",
-    },
-    {
-      id: "certificate",
-      title: "Certificates",
-    },
-    {
       id: "contact",
       title: "Contact",
     },
   ];
-  
-  const certificates = [
-    {
-      name: "Mastering Data Structures & Algorithm using C and C++",
-      date: "20 Oct,2023",
-      download_link: one,
-    },
-    {
-      name: "Introduction to Generative AI",
-      date: "17 Jan,2024",
-      download_link: two,
-    },
-    {
-      name: "Generative AI for Everyone",
-      date: "21 Jan,2024",
-      download_link: three,
-    },
-    {
-      name: "GenAI for Everyone",
-      date: "28 Jan,2024",
-      download_link: four,
-    },
-    {
-      name: "Introduction to Large Language Models",
-      date: "28 Jan,2024",
-      download_link: five,
-    },
-    {
-      name: "Generative AI Primer",
-      date: "31 Jan,2024",
-      download_link: six,
-    },
-    {
-      name: "Algorithms on Strings",
-      date: "8 Feb,2024",
-      download_link: seven,
-    },
-    {
-      name: "Prompt Engineering for ChatGPT",
-      date: "23 Feb,2024",
-      download_link: eight,
-    },
-    {
-      name: "Learn to code with AI",
-      date: "4 Apr,2024",
-      download_link:nine,
-    },
-    {
-      name: "ChatGPT for Beginners: Save time with Microsoft Excel",
-      date: "4 Apr,2024",
-      download_link:ten,
-    },
-    {
-      name: "Generative AI with Large Language Models",
-      date: "4 Apr,2024",
-      download_link: eleven,
-    },
-    {
-      name: "Build AI Apps with ChatGPT, Dall-E, and GPT-4",
-      date: "20 Apr,2024",
-      download_link:twelve,
-    },
-    {
-      name: "ChatGPT Playground for Beginners: Intro to NLP AI",
-      date: "20 Apr,2024",
-      download_link: thirteen,
-    },
-    {
-      name: "ChatGPT Advanced Data Analysis",
-      date: "20 Apr,2024",
-      download_link: fourteen,
-    },
-    {
-      name: "Dynamic Programming, Greedy Algorithms",
-      date: "5 May,2024",
-      download_link:fifteen,
-    },
-    {
-      name: "Approximation Algorithms and Linear Programming",
-      date: "5 May,2024",
-      download_link:sixteen,
-    },
-    {
-      name: "HTML, CSS, and Javascript for Web Developers",
-      date: "20 May,2024",
-      download_link: seventeen,
-    },
-    {
-      name: "Server side JavaScript with Node.js",
-      date: "20 May,2024",
-      download_link: eighteen,
-    },
-    {
-      name: "Data Structures and Algorithms - Self Paced",
-      download_link: nineteen,
-    },
-  ];
-  
-  const cvData = {
-    general: {
-      title: "General Resume",
-      url: resume,
-    },
-    fullstack: {
-      title: "Specialized Resume",
-      url: specializedresume,
-    },
-  };
   
   // Services shown on About page
   const services = [
@@ -213,8 +73,8 @@ import {
   ];
 
   const technologies = [
-    { name: "CSS 3", icon: css},
     { name: "HTML 5", icon: html},
+    { name: "CSS 3", icon: css},
     { name: "JavaScript", icon: javascript},
     { name: "TypeScript", icon: typescript},
     { name: "React JS", icon: reactjs },
@@ -223,24 +83,22 @@ import {
     { name: "MongoDB", icon: mongodb},
     { name: "Git", icon: git},
     { name: "Python", icon: python},
-    { name: "Java", icon: java},
     { name: "Three JS", icon: threejs},
-    { name: "C++", icon: cpp},
     { name: "React Native", icon: native},
   ];
   
   const projects = [
     {
-      name: "Mera Khata",
+      name: "LDecor",
       description:
-        "A system designed for effortless record-keeping, seamless transaction management, and reliable client handling with backend services for data security.",
+        "A MERN + React Native dealer and inventory management portal featuring real-time stock tracking, dealer enquiries, and an intuitive admin dashboard.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "nodejs",
+          name: "reactnative",
           color: "green-text-gradient",
         },
         {
@@ -249,12 +107,12 @@ import {
         },
       ],
       image: merakhata,
-      source_code_link: "https://github.com/Saks34/Mera-Khata",
+      source_code_link: "#",
     },
     {
-      name: "E-Commerce Website",
+      name: "EduSync",
       description:
-        "Full-stack e-commerce platform featuring product listings, cart functionality, user authentication, and smart product recommendations using Gemini API.",
+        "A microservices EdTech platform with live classes, group chat, and biometric attendance (QR + face recognition), built with React, Node.js, and FastAPI.",
       tags: [
         {
           name: "react",
@@ -265,15 +123,15 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "geminiapi",
+          name: "python",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/Saks34/Ecommerce",
+      source_code_link: "#",
     },
     {
-      name: "ETP - Everything is Possible",
+      name: "ClassBridge – Everything is Possible",
       description:
         "Digital learning system designed for intuitive navigation, dynamic content management, and inclusive education with backend services for user tracking.",
       tags: [
@@ -288,10 +146,10 @@ import {
         {
           name: "aws",
           color: "pink-text-gradient",
-    },
-  ],
-  image: etp,
-  source_code_link: "https://github.com/Saks34/ETP---Everything-is-Possible",
+        },
+      ],
+      image: etp,
+      source_code_link: "https://github.com/Saks34/ETP---Everything-is-Possible",
     },
   ];
   
@@ -325,12 +183,12 @@ import {
       institution: "Lovely Professional University",
       icon: College,
       iconBg: "#E6DEDD",
-      date: "2022 - Present",
+      date: "2022 - 2026",
       points: [
-        "Currently pursuing B.Tech in Computer Science and Engineering.",
-        "Gaining hands-on experience in Java and full-stack web development .",
+        "Completed B.Tech in Computer Science and Engineering with a CGPA of 76.10%.",
+        "Authored an IEEE/Scopus-indexed research paper (ICCCES-2026) on smart attendance systems using machine learning.",
       ],
     },
   ];
   
-  export { services, technologies, experiences, projects, certificates, cvData, education , navLinks };
+  export { services, technologies, experiences, projects, education, navLinks };
