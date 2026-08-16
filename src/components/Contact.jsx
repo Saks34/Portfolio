@@ -26,19 +26,24 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
+
     setLoading(true);
     emailjs
       .send(
-        'service_hsrgwnm',
-        'template_c14yh8h',
+        'service_0h0l36k',
+        'template_o6m8wir',
         {
-          from_name: form.name,
-          to_name: 'Saksham Satnalika',
-          from_email: form.email,
-          to_email: 'sakshamsatnalika723@gmail.com',
-          message: form.message,
+          name: form.name.trim(),
+          email: form.email.trim(),
+          to_email: 'sakshamsatnalika34@gmail.com',
+          message: form.message.trim(),
         },
-        'AYeMdixZPVL40bPYb'
+        'VuVjNDf7H23eenaYf'
       )
       .then(
         () => {
@@ -102,6 +107,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
+                  required
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your name?"
@@ -115,6 +121,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
+                  required
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What's your email?"
@@ -128,6 +135,7 @@ const Contact = () => {
                 <textarea
                   rows="6"
                   name="message"
+                  required
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What do you want to say?"
@@ -136,7 +144,8 @@ const Contact = () => {
               </label>
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 transition-all py-3 px-8 w-fit text-white font-semibold rounded-xl shadow-md shadow-blue-400"
+                disabled={loading}
+                className="bg-blue-600 hover:bg-blue-700 disabled:opacity-50 transition-all py-3 px-8 w-fit text-white font-semibold rounded-xl shadow-md shadow-blue-400"
               >
                 {loading ? 'Sending...' : 'Send'}
               </button>
