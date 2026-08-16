@@ -16,6 +16,9 @@ import {
   carrent,
   etp,
   merakhata,
+  ldecor,
+  classbridge,
+  edusync,
   threejs,
   College,
   Primary,
@@ -59,7 +62,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Freelancer",
       icon: creator,
     },
   ];
@@ -91,56 +94,56 @@ import {
     {
       name: "LDecor",
       description:
-        "A MERN + React Native dealer and inventory management portal featuring real-time stock tracking, dealer enquiries, and an intuitive admin dashboard.",
+        "A MERN + React Native dealer and inventory management portal built for a multi-company decor business group. Features real-time stock tracking, dealer enquiry management, and a peer-to-peer partner API that lets independently deployed sister companies check inventory and place orders across each other's systems.",
       tags: [
         {
-          name: "react",
+          name: "reactnative",
           color: "blue-text-gradient",
         },
         {
-          name: "reactnative",
+          name: "expressjs",
           color: "green-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "restapi",
           color: "pink-text-gradient",
         },
       ],
-      image: merakhata,
-      source_code_link: "#",
+      image: ldecor,
+      live_link: "https://ldecorstocklisting.vercel.app",
     },
     {
       name: "EduSync",
       description:
-        "A microservices EdTech platform with live classes, group chat, and biometric attendance (QR + face recognition), built with React, Node.js, and FastAPI.",
+        "A microservices-based EdTech platform combining live class streaming (YouTube API + BullMQ post-stream pipeline), Redis-backed group chat with Socket.io, and biometric attendance using QR codes and face recognition. Includes AI-powered lecture summarization via Gemini and a video-on-demand library.",
       tags: [
         {
-          name: "react",
+          name: "opencv",
           color: "blue-text-gradient",
         },
         {
-          name: "nodejs",
+          name: "geminiapi",
           color: "green-text-gradient",
         },
         {
-          name: "python",
+          name: "redis",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "#",
+      image: edusync,
+      live_link: "https://edusyncweb.vercel.app",
     },
     {
       name: "ClassBridge – Everything is Possible",
       description:
-        "Digital learning system designed for intuitive navigation, dynamic content management, and inclusive education with backend services for user tracking.",
+        "A live class platform integrating the YouTube API for streaming and Socket.io for real-time classroom interaction, with a school administration module covering timetables, batches, and leave requests. Deployed on AWS with a Node.js/Express backend.",
       tags: [
         {
-          name: "react",
+          name: "socketio",
           color: "blue-text-gradient",
         },
         {
-          name: "nodejs",
+          name: "youtubeapi",
           color: "green-text-gradient",
         },
         {
@@ -148,8 +151,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: etp,
-      source_code_link: "https://github.com/Saks34/ETP---Everything-is-Possible",
+      image: classbridge,
+      source_code_link: "https://github.com/Saks34/ClassBridge",
+      live_link: "https://classbridgeweb.vercel.app",
     },
   ];
   

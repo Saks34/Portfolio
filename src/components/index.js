@@ -6,6 +6,7 @@ import Tech from './Tech';
 import Project from './Project';
 import Education from './Education';
 import Contact from './Contact';
+import ThemeToggle from './ThemeToggle';
 
 export {
   Hero,
@@ -15,6 +16,7 @@ export {
   Project,
   Education,
   Contact,
+  ThemeToggle,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

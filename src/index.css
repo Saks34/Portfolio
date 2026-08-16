@@ -250,3 +250,31 @@
     
     /* ... rest of the animation keyframes ... */
   }
+
+  /* Theme Toggle Animations */
+  @keyframes cb-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+
+  @keyframes cb-spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-cb-float {
+    animation: cb-float 3s ease-in-out infinite;
+  }
+
+  .animate-cb-spin-slow {
+    animation: cb-spin-slow 12s linear infinite;
+  }
+

@@ -26,6 +26,9 @@ import native from "./tech/native.png";
 import carrent from "./carrent.png";
 import etp from "./etp.png";
 import merakhata from "./merakhata.png";
+import ldecor from "./ldecor.png";
+import classbridge from "./classbridge.png";
+import edusync from "./edusync.png";
 
 export {
   logo,
@@ -52,6 +55,10 @@ export {
   carrent,
   etp,
   merakhata,
+  ldecor,
+  classbridge,
+  edusync,
   College,
   Primary,
 };
+

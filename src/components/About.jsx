@@ -64,7 +64,7 @@
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary dark:text-gray-300 text-gray-700 text-[17px] max-w-3xl leading-[30px]'
         >
-          I am currently pursuing a Bachelor of Technology (B.Tech) degree in Computer Science and Engineering at Lovely Professional University, where I am in my third year of studies. Alongside my academic journey, I am also a content creator on YouTube, where I combine my technical expertise and creative skills to connect with a broader audience. I have a strong understanding of web development, particularly in React and backend technologies.
+          I completed my Bachelor of Technology (B.Tech) degree in Computer Science and Engineering at Lovely Professional University in 2026. I'm a MERN stack and React Native developer with hands-on experience building full-stack products — from EdTech platforms to inventory management systems — and I currently work as a freelance developer while building independent SaaS products for Indian SMB markets. I have a strong understanding of web development, particularly in React and backend technologies, along with a growing interest in AI-powered applications.
         </motion.p>
 
         <div className='mt-20 flex flex-wrap gap-10'>

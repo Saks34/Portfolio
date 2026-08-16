@@ -10,13 +10,15 @@ import {
   FaLinkedin,
   FaXTwitter,
 } from "react-icons/fa6";
+import ThemeToggle from "./ThemeToggle";
+import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [mobileToggle, setMobileToggle] = useState(false);
   const [desktopToggle, setDesktopToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
+  const { isDark } = useTheme();
 
   const mainNavLinks = navLinks.filter(
     (link) => link.id === "about" || link.id === "project" || link.id === "contact"
@@ -25,31 +27,16 @@ const Navbar = () => {
     (link) => link.id !== "about" && link.id !== "project" && link.id !== "contact"
   );
 
-  const menuIcon = darkMode ? menu : menu_dark;
-  const closeIcon = darkMode ? close : close_dark;
+  const menuIcon = isDark ? menu : menu_dark;
+  const closeIcon = isDark ? close : close_dark;
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      setDarkMode(savedTheme === "dark");
-      document.documentElement.classList.toggle("dark", savedTheme === "dark");
-    } else {
-      document.documentElement.classList.add("dark");
-    }
-
     const handleScroll = () => {
       setScrolled(window.scrollY > 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleTheme = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
-    localStorage.setItem("theme", newDarkMode ? "dark" : "light");
-    document.documentElement.classList.toggle("dark", newDarkMode);
-  };
 
   return (
     <nav
@@ -125,19 +112,7 @@ const Navbar = () => {
           <div className="lg:hidden flex items-center gap-4">
             {/* Theme Toggle */}
             <div className="flex items-center">
-              <button
-                onClick={toggleTheme}
-                className="relative inline-flex items-center h-6 rounded-full w-11 bg-gray-300 dark:bg-gray-700 transition-colors duration-200 focus:outline-none"
-                aria-label="Toggle dark mode"
-              >
-                <span
-                  className={`inline-block w-4 h-4 transform transition-transform duration-200 rounded-full bg-white ${
-                    darkMode ? "translate-x-6" : "translate-x-1"
-                  }`}
-                />
-                <span className="absolute left-1 text-xs">☀️</span>
-                <span className="absolute right-1 text-xs">🌙</span>
-              </button>
+              <ThemeToggle size="sm" />
             </div>
 
             {/* Hamburger */}
@@ -213,19 +188,7 @@ const Navbar = () => {
               <FaXTwitter className="text-xl text-black dark:text-white hover:text-gray-700 transition-colors" />
             </a>
 
-            <button
-              onClick={toggleTheme}
-              className="relative inline-flex items-center h-6 rounded-full w-11 bg-gray-300 dark:bg-gray-700 transition-colors duration-200 focus:outline-none"
-              aria-label="Toggle dark mode"
-            >
-              <span
-                className={`inline-block w-4 h-4 transform transition-transform duration-200 rounded-full bg-white ${
-                  darkMode ? "translate-x-6" : "translate-x-1"
-                }`}
-              />
-              <span className="absolute left-1 text-xs">☀️</span>
-              <span className="absolute right-1 text-xs">🌙</span>
-            </button>
+            <ThemeToggle size="md" />
           </div>
         </div>
       </div>
